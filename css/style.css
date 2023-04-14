@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* MENÚ */
+
+header{
+    background-color: #f6f2ec;
+    width: 100%;
+}
+
+.menu__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.logo{
+    width: 40%;
+}
+
+.menu__container ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 25px;
+    font-size: 12px;
+}
+
+li a{
+    text-decoration: none;  
+    padding: 30px; 
+    text-align: left;
+    color: #404040;
+    font-size: 15px;
+}
+
+li a:hover{
+    color: #dbd112
+}
+
+.active{
+    color: #dbd112;
+}
+
+#hamb, #menu-check{
+    display: none;
+}
+
+.logo{
+    width: 15%;
+}
+
+/* MAIN */
+
+.mainTitle{
+    text-align: center;
+    font-size: 29px;
+    margin-top: 5%;
+    color: #404040;
+}
+
+.secondaryTitle{
+    font-family: 'Ms Madi', cursive;
+    text-align: center;
+    color: #dbd112;
+    font-size: 83px;
+    margin-top: -3%;
+}
+
+main form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+main form .inputContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-size: 18px;
+}
+main form .inputContainer input,select{
+    border: none;
+    border-bottom: 1px solid rgb(33, 33, 33);
+    padding: 10px;
+    font-size: 18px;
+}
+.btn-registrar{
+    padding: 10px;
+    background-color: rgb(33, 33, 33);
+    border-radius: 5px;
+    color: white;
+    border:solid rgb(33, 33, 33) 1px;
+    width: 170px;
+    font-size: 18px;
+}
+.btn-registrar:hover{
+    transition: 1s ease-in-out;
+    color: rgb(33, 33, 33);
+    background-color: white;
+
+}
+
+.contenedorUsuarios{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+}
+.card-user{
+    padding: 10px;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    border-radius: 5px;
+    width: 300px;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #e8e8e8;
+    padding: 2%;
+}
+
+.thirdTitle{
+    font-family: 'Ms Madi', cursive;
+    text-align: center;
+    color: #404040;
+    font-size: 63px;
+}
+
+.footer__icons{
+    font-size: 33px;
+    text-align: center;
+}
+
+.footer__icons i{
+    margin: 0 1%;
+}
+
+.footer__icons a {
+    color: #404040;
+}
+
+.footer__icons a:hover {
+    color: #dbd112;
+}
+
+/* NOSOTROS */
+
+.container__us{
+    width: 100%;
+}
+
+.container__us img{
+    max-width: 100%;
+}
+
+.us__text{
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.us__text p{
+    text-align: center;
+}
+
+.accent{
+    font-family: 'Ms Madi', cursive;
+    text-align: center;
+    color: #ffffff;
+    font-size: 73px;
+}
+
+
+/* PÁGINA AYUDAR */
+
+.div-buttons{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 7%;
+}
+
+.boton{
+    background-color: #404040;
+    color: #ffffff;
+    padding: 4% 10%;
+    border-radius: 11px;
+    border: none;
+    font-size: 13px;
+}
+
+.boton:hover{
+    background-color: #dbd112;
+    color: #404040;
+}
+
+/* PÁGINA CONTACTO */
+
+.formulario
+{
+    margin-top: 8%;
+}
+
+.formulario h1{
+    font-size: 43px;
+}
+
+.formulario h3 {
+    font-size: 63px;
+} 
+
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #404040;
+    padding-left: 2%; 
+}
+
+form {
+    margin: 0 auto;
+    width: 600px;
+    padding: 2px;
+    margin-top: 3%;
+    margin-bottom: 10%; 
+}
+
+form label {
+    display: block;
+    padding: 11px 0px; 
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px 0px;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 2%; 
+}
+
+input:focus, textarea:focus {
+    background-color: #dbd112;
+    color: #ffffff;
+    transition: all 1s;
+    outline: none; 
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    padding: 8px;
+    padding-left: 11px;
+    margin-bottom: 2%;
+    font-family: 'Poppins', sans-serif;
+    color: #404040;
+    font-size: 13px!important;
+    font-weight: 500;
+    outline: none; 
+}
+
+input[type=text]:nth-child(1), input[type=email]:nth-child(2){
+    padding-left: 9px;
+}
+
+textarea{
+    padding-left: 9px;
+}
+
+input.boton__form{
+    background-color: #404040;
+    color: #ffffff;
+}
+
+input.boton__form:hover{
+    background-color: #dbd112;
+    color: #ffffff;
+}

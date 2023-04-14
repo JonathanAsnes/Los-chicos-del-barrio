@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/35dbebc5d1.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/5cd00f207b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet"> <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet"> <!-- FONT -->
+    <title>Merendero Los Chicos del Barrio</title>
+</head>
+<body>
+    <header>
+        <div class="menu__container">
+            <a href="index.html"><img class="logo" src="images/logo-loschicos.png" alt="Logo Merendero los chicos del barrio"></a>
+            <input type="checkbox" id="menu-check">
+            <label id="hamb" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>
+            <nav id="menu">
+                <ul>
+                    <li><a class="active" href="index.html">INICIO</a></li>
+                    <li><a href="html/nosotros.html">NOSOTROS</a></li>
+                    <li><a href="html/ayudar.html">AYUDAR</a></li>
+                    <li><a href="html/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/home-slider-1.png" class="d-block w-100" alt="Imagen 1 Slider Home - Un Mundo de Pañuelos">
+            </div>
+            <div class="carousel-item">
+                <img src="images/home-slider-2.png" class="d-block w-100" alt="Imagen 2 Slider Home - Un Mundo de Pañuelos">
+            </div>
+            <div class="carousel-item">
+                <img src="images/home-slider-3.png" class="d-block w-100" alt="Imagen 3 Slider Home - Un Mundo de Pañuelos">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    <main>
+        <h1 class="mainTitle">GRACIAS A TU AYUDA PODEMOS SEGUIR</h1>
+        <h2 class="secondaryTitle">dándole de comer a muchos niños</h2>
+        <h3>Registre a sus chicos aqui</h1>
+        <form id="formularioUsuarios">
+            <div class="inputContainer">
+                <label for="nombre">Ingrese su nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Agustin" required> 
+            </div>
+            <div class="inputContainer">
+                <label for="apellido">Ingrese su apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Gonzalez" required>
+            </div>
+            <div class="inputContainer">
+                <label for="matricula">Numero de Matricula</label>
+                <input type="number" id="matricula" name="matricula" placeholder="7676545" required>
+            </div>            
+            <div class="inputContainer">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" placeholder="Ingrese su edad" required> 
+            </div>
+            <div class="inputContainer">
+                <label for="titular">Nombre y Apellido del Titular</label>
+                <input type="text" id="titular" name="titular" placeholder="Ingrese el nombre y apellido del titular" required> 
+            </div>                      
+            <div class="inputContainer">
+                <label for="provincia">Seleccione su provincia</label>
+                <select name="provincia" id="provincia">
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Ríos">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquén">Neuquén</option>
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                    <option value="Tucumán">Tucumán</option>
+                </select>
+            </div>
+            <input type="submit" value="Registrar" class="btn-registrar"/>
+        </form>        
+        <div class="contenedorUsuarios"></div>        
+        <p><span id="totalChicos"></span></p>
+        </div>
+    </main>
+    <footer>
+        <h4 class="thirdTitle">contactanos</h4>
+        <div class="footer__icons">
+            <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:merendero@hotmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> <!-- BOOTSTRAP -->
+    <script src="js/script.js"></script>
+</body>
+</html>

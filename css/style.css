@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+  }
 
 /* MENÚ */
 
@@ -124,6 +127,14 @@ main form .inputContainer input,select{
     color: white;
     border-radius: 5px;
     width: 300px;
+}
+
+.visit{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
 }
 
 

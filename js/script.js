@@ -33,4 +33,23 @@ formularioUsuarios.addEventListener("submit", (event) => {
     });
     renderizarUsuarios();
 });
+formularioUsuarios.addEventListener("submit", async (event) => {
+    event.preventDefault();
+  
+    const nuevoUsuario = {
+      nombre: formularioUsuarios.nombre.value,
+      apellido: formularioUsuarios.apellido.value,
+      matricula: formularioUsuarios.matricula.value,
+      edad: formularioUsuarios.edad.value,
+      titular: formularioUsuarios.titular.value,
+      provincia: formularioUsuarios.provincia.value,
+    };
+  
+    const id = await contenedor.save(nuevoUsuario);
+  
+    console.log(`Usuario registrado con ID ${id}`);
+  
+    // Vaciar el formulario después de registrar al usuario
+    formularioUsuarios.reset();
+  });
   
